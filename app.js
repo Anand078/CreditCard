@@ -83,6 +83,6 @@ fetch('https://services.crif-online.ch/CrifOnlineAPI/reports/personAddress', {
   .catch(err => console.log(err));
 });
  
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log('Our express server is up on port ' + PORT);
 });
