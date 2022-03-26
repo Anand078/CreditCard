@@ -60,9 +60,6 @@ fetch('https://services.crif-online.ch/CrifOnlineAPI/reports/personAddress', {
     // var fName = data?.decisionMatrix.firstName;
     // var lName = data?.decisionMatrix.lastName;
     var score = data?.decisionMatrix.decisionItems[0].value;
-    var insertData = '\n' + req.body.firstName + ', ' + req.body.lastName + ', Score: ' + score + 
-    ', ' + req.body.address + ', ' + req.body.email;
-
     var textColor = '';
     var text = '';
     if (score > 420){
